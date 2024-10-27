@@ -11,8 +11,8 @@
 
 for i in range(1, 999):
     for j in range(1, 999):
-        if i + j - i * j / 1000 == 500:
-            print(i, j, 1000 - i - j)
+        if i + j - i * j // 1000 == 500:
+            print(i * j * (1000 - i - j))
             break 
     else:
         continue
